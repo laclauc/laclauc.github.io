@@ -1751,8 +1751,7 @@
 	}
 
 		#banner header {
-			background-color: #252122;
-			background-color: rgba(34, 10, 11, 0.98);
+			background-color: white;
 		}
 
 			#banner header h2 {
@@ -1771,7 +1770,7 @@
 
 	#header-wrapper {
 		position: relative;
-		background: #afc9d3;
+		background: white;
 		border-bottom: solid 1px #ccc;
 	}
 
