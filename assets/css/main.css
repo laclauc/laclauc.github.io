@@ -1411,13 +1411,16 @@
 
 		.image.avatar {
 			border-radius: 100%;
+			margin: 0 0.05em 2em 0;
+			padding-top: 1em;
 			overflow: hidden;
 		}
 
 			.image.avatar img {
 				border-radius: 100%;
 				display: block;
-				width: 5.5em;
+				width: 8.5em;
+
 			}
 
 .cbook {
@@ -2007,12 +2010,14 @@
 
 			#header {
 				text-align: center;
+				width: 80em;
 			}
 
 				#header h1 {
 					color: #252122;
-					font-weight: 900;
-					font-size: 2.5em;
+					font-weight: 800;
+					width:13em;
+					font-size: 2em;
 					letter-spacing: -0.035em;
 					margin: 0 0 .1em 0;
 					padding : 1em;
