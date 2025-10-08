@@ -55,6 +55,17 @@
     button.primary:hover { filter: brightness(0.96); }
     .note { color: var(--muted); font-size: 0.9rem; }
 </style>
+<!-- === MathJax configuration === -->
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 </head>
 <body>
 <div class="container">
@@ -74,7 +85,7 @@
                             <div class="q-number">Question 1</div>
                             <div class="q-type">MCQ</div>
                         </div>
-                        <div class="q-text">Dé équilibré (1 à 6). Quelle est l’espérance de X (le résultat du lancer) ?</div>
+                        <div class="q-text">Dé équilibré (1 à 6). Quelle est l’espérance de $X$ (le résultat du lancer) ?</div>
                         <div class="choices">
                             
                         <label class="choice">
@@ -106,27 +117,27 @@
                             <div class="q-number">Question 2</div>
                             <div class="q-type">MCQ</div>
                         </div>
-                        <div class="q-text">Soit X suivant une loi Binomiale de paramètres (n,p). On rappelle que X correspond au nombre de succès, lorsqu’on fait n expériences indépendantes, de probabilité de succès p. Laquelle est correcte ?</div>
+                        <div class="q-text">Soit $X$ suivant une loi Binomiale de paramètres $(n,p)$. On rappelle que $X$ correspond au nombre de succès, lorsqu’on fait $n$ expériences indépendantes, de probabilité de succès $p$. Laquelle est correcte ?</div>
                         <div class="choices">
                             
                         <label class="choice">
                             <input type="radio" name="q_2" value="1">
-                            <span class="choice-text">E[X]=p et Var(X)=n</span>
+                            <span class="choice-text">$\mathbb{E}[X]=p$ et $Var(X)=n$</span>
                         </label>
                         
                         <label class="choice">
                             <input type="radio" name="q_2" value="2">
-                            <span class="choice-text">E[X]=np et Var(X)=p(1-p)</span>
+                            <span class="choice-text">$\mathbb{E}[X]=np$ et $Var(X)=p(1-p)$</span>
                         </label>
                         
                         <label class="choice">
                             <input type="radio" name="q_2" value="3">
-                            <span class="choice-text">E[X]=n et Var(X)=np</span>
+                            <span class="choice-text">$\mathbb{E}[X]=n et Var(X)=np$</span>
                         </label>
                         
                         <label class="choice">
                             <input type="radio" name="q_2" value="4">
-                            <span class="choice-text">E[X]=np et Var(X)=np(1-p)</span>
+                            <span class="choice-text">$\mathbb{E}[X]=np et Var(X)=np(1-p)$</span>
                         </label>
                         
                         </div>
@@ -138,7 +149,7 @@
                             <div class="q-number">Question 3</div>
                             <div class="q-type">MCQ</div>
                         </div>
-                        <div class="q-text">Deux événements A et B sont incompatibles (ne peuvent pas arriver ensemble) et P(A), P(B) &gt; 0. Peut-on conclure qu’ils sont indépendants ?</div>
+                        <div class="q-text">Deux événements A et B sont incompatibles (ne peuvent pas arriver ensemble) et $P(A)$, $P(B)$ &gt; 0. Peut-on conclure qu’ils sont indépendants ?</div>
                         <div class="choices">
                             
                         <label class="choice">
@@ -160,27 +171,27 @@
                             <div class="q-number">Question 4</div>
                             <div class="q-type">MCQ</div>
                         </div>
-                        <div class="q-text">Variables continues X,Y de densité conjointe p_{X,Y}. Quelle est la bonne expression de P(a≤X≤b, c≤Y≤d) ?</div>
+                        <div class="q-text">Variables continues $X,Y$ de densité conjointe $f_{X,Y}$. Quelle est la bonne expression de $P(a\leq X \leq b, c\leq Y \leq d)$ ?</div>
                         <div class="choices">
                             
                         <label class="choice">
                             <input type="radio" name="q_4" value="1">
-                            <span class="choice-text">F_X(b)-F_X(a)</span>
+                            <span class="choice-text">$F_X(b)-F_X(a)$</span>
                         </label>
                         
                         <label class="choice">
                             <input type="radio" name="q_4" value="2">
-                            <span class="choice-text">F_Y(d)-F_Y(c)</span>
+                            <span class="choice-text">$F_Y(d)-F_Y(c)$</span>
                         </label>
                         
                         <label class="choice">
                             <input type="radio" name="q_4" value="3">
-                            <span class="choice-text">∫_a^b ∫_c^d f_{X,Y}(x,y) dy dx</span>
+                            <span class="choice-text">$\int_a^b \int_c^d f_{X,Y}(x,y) dy dx$</span>
                         </label>
                         
                         <label class="choice">
                             <input type="radio" name="q_4" value="4">
-                            <span class="choice-text">f_{X,Y}(b,d)-f_{X,Y}(a,c)</span>
+                            <span class="choice-text">$f_{X,Y}(b,d)-f_{X,Y}(a,c)$</span>
                         </label>
                         
                         </div>
@@ -658,5 +669,6 @@
     document.getElementById('downloadCsvBtn').addEventListener('click', downloadCsv);
 })();
 </script>
+    
 </body>
 </html>
